@@ -1,0 +1,38 @@
+<!--This doctype declaration tells the browser that we're using HTML5-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2nd Web Dev Meeting!</title>
+        <link href="intro.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="header">
+            <h1 class="title">Working with Shapes!</h1>
+        </div>
+        <div class="contentWrapper">
+                <p>In this section, we will calculate the circumference and area of a circle and draw the circle!</p>
+                <div>
+                    <div class="inputField">
+                        <label for="radius">Radius:</label>
+                        <input type="number" id="radius">
+                    </div>
+                    <div class="inputField">
+                        <label for="xVal">x-coordinate:</label>
+                        <input type="number" id="xVal">
+                    </div>
+                    <div class="inputField">
+                        <label for="yVal">y-coordinate:</label>
+                        <input type="number" id="yVal">
+                    </div>
+                    <button onclick="getCircle('circle', xVal.value, yVal.value, radius.value, 'circleAreaAndCircumference')">Calculate Circumference!</button>
+                </div>
+                <br>
+                <div id="circleAreaAndCircumference"></div>
+                <br>
+                <div id="circleContainer">
+                    <canvas id="circle"></canvas>
+                </div>
+        </div>
+        <script src="intro.js"></script>
+    </body>
+</html>
